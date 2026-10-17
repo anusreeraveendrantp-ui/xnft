@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Preview Card Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <main class="card">
+
+      <!-- NFT Image with Hover Overlay -->
+      <div class="card__images">
+        <img
+          src="https://assets.crio.do/learn_uploads/assets/image-equilibrium.jpg"
+          alt="Equilibrium #3429 – abstract NFT artwork"
+          class="card__image"
+          onerror="this.src='https://images.unsplash.com/photo-1634973357973-f2ed2657db3c?w=600&auto=format&fit=crop'"
+        />
+        <div class="card__images-layer" aria-hidden="true">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            class="card__overlay-icon"
+            aria-hidden="true"
+          >
+            <g fill="none" fill-rule="evenodd">
+              <circle stroke="#FFFFFF" stroke-width="2" cx="24" cy="24" r="23"/>
+              <path stroke="#FFFFFF" stroke-width="2"
+                d="M24 15c-5.523 0-10 4.03-10 9s4.477 9 10 9 10-4.03 10-9-4.477-9-10-9z"/>
+              <circle fill="#FFFFFF" cx="24" cy="24" r="3.5"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- NFT Title -->
+      <h1 class="card__title">
+        <a href="#">Equilibrium #3429</a>
+      </h1>
+
+      <!-- Description -->
+      <p class="card__description">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+
+      <!-- Price and Time -->
+      <div class="card__time">
+        <span class="card__time-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="11"
+            height="18"
+            viewBox="0 0 11 18"
+            aria-hidden="true"
+          >
+            <path
+              d="M5.5 0L0 9.167l5.5 3.166L11 9.167 5.5 0zM0 10.201l5.5 7.8 5.5-7.8-5.5 3.165-5.5-3.165z"
+              fill="#00FFF8"
+            />
+          </svg>
+          0.041 ETH
+        </span>
+        <span class="card__time-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            aria-hidden="true"
+          >
+            <g fill="#8BACD9" fill-rule="nonzero">
+              <path d="M8.5 0a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm0 1.133A7.367 7.367 0 101.133 8.5 7.375 7.375 0 008.5 1.133z"/>
+              <path d="M8.5 3.967c.313 0 .567.254.567.566v3.68l2.297 1.328a.567.567 0 01-.567.982L8.216 9.032A.567.567 0 017.933 8.5V4.533c0-.312.254-.566.567-.566z"/>
+            </g>
+          </svg>
+          3 days left
+        </span>
+      </div>
+
+      <!-- Divider -->
+      <hr class="card__divider" />
+
+      <!-- Creator -->
+      <div class="card__creator">
+        <img
+          src="https://assets.crio.do/learn_uploads/assets/image-avatar.png"
+          alt="Creator avatar – Jules Wyvern"
+          class="card__creator-avatar"
+          onerror="this.src='https://randomuser.me/api/portraits/women/44.jpg'"
+        />
+        <p class="card__creator-text">
+          Creation of <a href="#" class="card__creator-name">Jules Wyvern</a>
+        </p>
+      </div>
+
+    </main>
+
+    <!-- Footer Attribution -->
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.crio.do" target="_blank" rel="noopener">Crio.Do</a>.
+      Coded by
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>.
+    </footer>
+
+  </body>
+</html>
